@@ -45,7 +45,7 @@ router.delete('/:id', (req, res) => {
     where: { id: req.params.id,},
   })
   .then((category) => res.status(200).json(category))
-  .catch((err) => res.status(400).json(err));
+  .catch((err) => res.status(400).json(err))
 });
 
 module.exports = router;
